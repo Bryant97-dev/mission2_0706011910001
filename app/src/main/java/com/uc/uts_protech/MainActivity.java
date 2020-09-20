@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity implements AdapterUser.OnCon
 
     @Override
     public void onContactClick(int position) {
-        Log.d("clickwhy","onContactClick: clicked " + position);
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("contact_info",position);
         startActivity(intent);
