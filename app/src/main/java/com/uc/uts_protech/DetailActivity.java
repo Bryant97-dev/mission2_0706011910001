@@ -63,14 +63,12 @@ public class DetailActivity extends AppCompatActivity {
 
         final Intent intent = getIntent();
         final int position = intent.getIntExtra("contact_info",0);
-        //Log.d("position", String.valueOf(position));
+  
         Name = listUsers.get(position).getNama();
         Age = listUsers.get(position).getUmur();
         Address = listUsers.get(position).getAlamat();
 
-        Log.d("name",Name);
-        Log.d("age",Age);
-        Log.d("address",Address);
+    
 
         nama = findViewById(R.id.textdetails1);
         umur = findViewById(R.id.textdetails3);
