@@ -66,7 +66,7 @@ public class AddUserActivity<dialog> extends AppCompatActivity {
 
         Intent intent = getIntent();
         pos = intent.getIntExtra("position",0);
-        Log.d("intentcallme", String.valueOf(pos));
+        
 
         if(pos >= 0){
             button.setText("Update Data");
@@ -75,9 +75,6 @@ public class AddUserActivity<dialog> extends AppCompatActivity {
             getage = listUsers.get(pos).getUmur();
             getaddress = listUsers.get(pos).getAlamat();
 
-            Log.d("namekontak",getname);
-            Log.d("agekontak",getage);
-            Log.d("addresskontak",getaddress);
             nameTxt.setText(getname);
             getage = getage.replaceAll("\\D+","");
             ageTxt.setText(getage);
